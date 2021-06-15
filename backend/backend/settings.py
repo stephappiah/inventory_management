@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
     'django_rest_passwordreset',
-    'accounts.apps.AccountsConfig'
+    'accounts.apps.AccountsConfig',
+    'products.apps.AccountsConfig'
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
