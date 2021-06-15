@@ -20,3 +20,20 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.email
+
+    def get_full_name(self):
+        if self.first_name != None and self.last_name != None:
+            return self.first_name + ' ' + self.last_name
+        elif self.first_name == None:
+            return self.last_name
+        else:
+            return self.first_name 
+
+    def get_call_contact(self):
+        return self.contact
+
+    def get_short_name(self):
+        if self.first_name == None:
+            return self.last_name
+        else:
+            return self.first_name
