@@ -1,11 +1,11 @@
 # Project readme
 
 
-API Documentation
+* API Documentation
 https://documenter.getpostman.com/view/16230559/TzeXjnA8
 
 
-on linux, run 
+* On linux, run 
 <pre>
     <code>
         sudo chown -R $USER:$USER .
