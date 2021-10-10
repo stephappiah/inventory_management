@@ -7,7 +7,7 @@ from django.http import Http404
 
 class ProductCreateApi(generics.CreateAPIView):
 
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -15,15 +15,15 @@ class ProductCreateApi(generics.CreateAPIView):
 
 class ProductListApi(generics.ListAPIView):
 
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     queryset = Product.objects.all()
-    serializer_class =ProductSerializer
+    serializer_class = ProductSerializer
 
 
 class ProductUpdateApi(generics.RetrieveUpdateAPIView):
 
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -31,7 +31,7 @@ class ProductUpdateApi(generics.RetrieveUpdateAPIView):
 
 class ProductDeleteApi(generics.DestroyAPIView):
 
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -39,7 +39,7 @@ class ProductDeleteApi(generics.DestroyAPIView):
 
 class ProductDetailApi(generics.RetrieveAPIView):
 
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     model = Product
     queryset = Product.objects.all()
